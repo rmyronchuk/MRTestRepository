@@ -1,0 +1,8 @@
+  vm.getStoreList2 = function (categoryId){
+
+    let selectedStores = vm.stores.filter((store) => {
+      return store.categories.some(c => c === categoryId);
+    });
+
+    return selectedStores;
+  }
